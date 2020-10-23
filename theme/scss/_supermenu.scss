@@ -1,0 +1,81 @@
+
+@import "../scss/_vars";
+@import "../../common/scss/utils/_utils";
+
+
+
+/* -------------- SUPERMENU ----------------*/
+
+html body header #wb-sm{
+	height:42px;
+	border-top:1px solid $base-text-color;
+	border-bottom:1px solid $base-text-color;
+	.supermenu>li{
+		&>a{    
+			font-family: "Gotham Book", sans-serif, "Myriad Pro";
+			&[data-id='lvl1']{
+				border-left:$base-text-color 1px solid;
+			}
+			&:hover,&:focus{
+				border-bottom:$teal 2px solid;
+			
+			}
+
+		}
+			ul>li>a{
+				    font-family: "Gotham Book", sans-serif, "Myriad Pro";
+					padding: 3px 35px 3px 15px;
+				&[href='#']:after{
+					color:grey;
+				}
+			}	
+
+		
+	}
+	
+}
+
+
+/* REMOVE THIS PART IN 1.6.3 */
+
+/*items that have subitems*/
+#wb-sm .sm.open {
+  li {
+	/*menu open panel, individual items */
+	a, summary {
+		/*mobile*/
+		padding: 3px 30px 3px 10px;
+		&:before{
+			color:$teal;
+		    font-family: 'Glyphicons Halflings';
+		    content:' ';
+		    font-size: 0.8em;
+		    display:inline-block;
+		    width:20px;
+
+		}
+		&.viewed:before{
+			content:'\e013';
+		}
+		 
+	}
+	a[href='#']:after {
+		/* little arrow right> */
+		font-family: 'Glyphicons Halflings';
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		content: "\e080";
+		font-size: 1em;
+		right: 5px;
+		position: absolute;
+		top: 50%;
+    	-webkit-transform: translateY(-50%);
+    	transform: translateY(-50%);
+			color:$teal;
+	  }
+
+
+  }
+}

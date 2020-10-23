@@ -1,0 +1,114 @@
+@import "./_vars";
+
+
+//----------------------tables--------------
+table{
+	&.table-bordered {
+		thead, tbody,tfoot{
+			th, td{
+				border: 1px solid $light-grey;
+			}
+		}
+	}
+	th{
+		padding:10px;
+		color:white;
+		background:$teal;
+	}
+
+}
+
+
+//------------------myInfo ACCORDÉON
+
+
+.LOM-element details{
+	border:thin solid $semi-grey;
+	background:$off-white; /* main-tabbed-myinfo-colour */
+	p{		margin-top: 20px;	}
+	summary {
+		font-weight: bold;
+		border:none;
+		text-decoration:none !important;	
+	
+		background:$teal; /* main-tabbed-bar-colour */
+		border-radius:0;
+		color:white; /*main-tabbed-text-colour */
+	}
+	&[open]{
+		padding-bottom:0;
+		.wb-toggle{
+			background:$dark-teal; 
+		}
+		
+	}
+}
+
+
+//----------------------------TABS
+
+
+.wb-tabs{
+	margin-bottom:15px;
+	.tabpanels{
+		background:$off-white ;
+	}
+	details{
+		border-radius: 0 4px 4px 4px;	
+	}
+	[role="tablist"]{
+		//-----TABS----
+		li{
+			a{
+				background-color:$teal;
+				color:#FFFFFF;
+				&:hover,&:focus{text-decoration: underline;}
+				img{width:15em;}
+			}
+			&.active a{
+				//----ACTIVE TAB
+				border-top:none; /* main-tabbed-border */
+				padding-top:10px;
+				background: $dark-teal;
+				-webkit-transition: 0.5s ease;
+				-moz-transition: 0.5s ease;
+				-ms-transition: 0.5s ease;
+				-o-transition: 0.5s ease;
+				transition: 0.5s ease;
+				&:hover,&:focus{border-top:none;}
+				
+			}
+		}
+
+	}
+	
+}
+
+
+
+
+		 .glyphicon.glyphicon-ok{ color:#77ac3d;}
+		.glyphicon.glyphicon-remove{ color:#a32828;}
+//FIXES?
+.lt-ie9 input[type="radio"] + label{ width:90%; padding:0 0 0 1em !important; font-weight:100 !important;}
+.lt-ie9 .qs-text{font-size:14px !important;}
+
+
+.qs-disabled{display:none;}
+.qs-num{font-size:18px;}
+.qs-step1 .qs-nextquestion, .qs-step1 .qs-prevquestion, .qs-step3 .qs-nextquestion, .qs-step3 .qs-prevquestion {
+	display:none;
+}
+.qs-step1 .qs-current-info, .qs-step3 .qs-current-info{display:none;}
+
+.qs-nextquestion, .qs-submit-activity{background-color:#0f0}
+
+/*questions/answers styles*/
+
+.table-9-4-0{
+	td{
+    border: 1px solid grey;
+    padding: 10px;
+    vertical-align: top;
+	}
+}

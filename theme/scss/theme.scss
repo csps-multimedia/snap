@@ -1,3 +1,61 @@
 
 @import "../scss/_vars";
 @import "../../common/scss/utils/_utils";
+@import "../scss/_banner_footer";
+@import "../scss/_fonts";
+@import "../scss/_content";
+@import "../scss/_quiz";
+@import "../scss/_supermenu";
+
+
+//////////// WET Widget fixes ////////////
+.wb-tabs.carousel-s2.wb-tabs-inited{
+    padding-bottom: 4.375em;
+    .control{
+        &.nxt,&.prv,&.tab-count{
+            display:table-cell !important; vertical-align:middle;
+        }  
+    }
+}
+
+
+body{
+	background-color: transparent;
+}
+
+
+
+//---------------------------- CHANGE VIDEO PLAYER COLOR!
+$multimedia-color:$dark-teal;
+.wb-mltmd{
+	.wb-mm-ctrls{
+		background: $multimedia-color;
+	}
+	.wb-mm-ctrls progress{
+		border-color: $multimedia-color;
+	}
+	&.video.waiting .display:before,&.video:not(.playing):not(.waiting) .display:before{
+		background-color:$multimedia-color;
+	}
+}
+
+//--------------------toolbox
+.external-list{
+	dl{padding-left:40px;}
+	dd{display:none;}
+	
+}
+.link-as-button{
+    background-color: #265d60;
+    color: white;
+    display: inline-block;
+    padding: 5px 53px;
+    border: 0px solid #265d60;
+    border-radius: 5px;
+	text-decoration:none;
+	&:hover{
+		background-color:$dark-teal;
+		color:white;
+	}
+	
+}

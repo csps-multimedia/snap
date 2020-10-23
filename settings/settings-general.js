@@ -1,12 +1,12 @@
 ﻿'use strict';
 define({
-  "courseTitle_en": "Learn-O-Matic",
-  "courseTitle_fr": "Learn-O-Matic",
-  "courseSubtitle_en": "SNAP! Tool",
-  "courseSubtitle_fr": "Outils SNAP!",
-  "seriesTitle_en": "Series Title",
-  "seriesTitle_fr": "Titre de série",
+  "courseLegacyCode": "A230",
+  "courseTitle_en": "Security Awareness",
+  "courseTitle_fr": "Sensibilisation à la sécurité",
+  "seriesTitle_en": "",
+  "seriesTitle_fr": "",
+  "showGlossary": true,
   "addToolboxPage": [],
-  "editMode": true,
+  "editMode": false,
   "scormSendScore": true
 });

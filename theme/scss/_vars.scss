@@ -1,11 +1,18 @@
+$teal:#265d60;
+$dark-teal:#1c3e40;
+$light-grey:#ccc;
+$semi-grey:#666;
+$off-white:#eaefef;
+
+
 //---------- Global -----------//
-$error-color: #FF4136;
+$error-color: #904136; 
 $warning-color: #FF851B;
 $base-text-color: #222;
 $link-color: #295376;
 $link-color-visited: #7834bc;
 $box-shadox-color: #999;
-$button-default-color: #555;
+$button-default-color: #fff;
 $button-default-color-hover: #fff;
 $button-default-background-color: #3b3b3b;
 $button-default-background-color-hover: #4f4f4f;
@@ -36,7 +43,7 @@ $favorites-icon-fav-added-color: #efce4a;
 //Sitemap
 $sitemap-link-background-color: #f1f1f1;
 $sitemap-checkmark-color: #fff;
-$sitemap-checkmark-background-color: #3b3b3b;
+$sitemap-checkmark-background-color: $dark-teal;
 
 
 //---------- Widgets ----------//
@@ -48,8 +55,8 @@ $collapsibleBox-border-bottom-color: #666;
 $collapsibleBox-handle-color: #222;
 
 //Modal
-$modal-header-color: #555;
-$modal-header-background-color: #eee;
+$modal-header-color: #fff;
+$modal-header-background-color: $teal;
 $modal-body-background-color: #fff;
 
 //Zoom
@@ -76,55 +83,55 @@ $card-text-color-hover: #3f4040;
 //---------- Layout ----------//
 
 //Footer
-$footer-button-color: #000;
-$footer-button-color-mobile: #fff;
-$footer-button-background-color: #b4b4b4;
-$footer-button-color-hover: #000;
-$footer-button-background-color-hover: #c6c8ca;
-$footer-text-color: $base-text-color;
-$footer-page-of-text-color: #000;
+$footer-button-color: #fff;
+$footer-button-color-mobile: $teal;
+$footer-button-background-color: $teal;
+$footer-button-color-hover: #fff;
+$footer-button-background-color-hover: $dark-teal;
+$footer-text-color: #fff;
+$footer-page-of-text-color: $teal;
 $footer-page-of-text-color-mobile: $base-text-color;
 $footer-container-background-color: transparent;
 $footer-button-border-color: #fff;
 $footer-button-color-disabled: #5b5b5b;
 $footer-button-background-color-disabled: #e6e6e6;
-$footer-mobile-button-background-color: #eee;
+$footer-mobile-button-background-color: #555;
 
 //Header
 $header-background-color: transparent;
-$header-text-color: #666;
-$header-banner-title-color: #555;
-$header-module-name-color: #eee;
+$header-text-color: #fff;
+$header-banner-title-color: $teal;
+$header-module-name-color: #555;
 $header-button-background-color: transparent;
-$header-button-color-hover: #000;
-$header-button-background-color-hover: #eee;
-$header-button-color: #555;
+$header-button-color-hover: #fff;
+$header-button-background-color-hover: transparent;
+$header-button-color: #fff;
 //Top Navigation
 $top-nav-text-color: $base-text-color;
 $top-nav-button-color: $base-text-color;
 //mobile only
 $top-nav-button-color-mobile: #fff;
-$top-nav-button-background-color: #777;
-$hamburger-menu-color-mobile: $button-default-color;
+$top-nav-button-background-color: $teal;
+$hamburger-menu-color-mobile: #fff;
 
 //Toolbar
 $toolbox-link-color: $base-text-color;
 $toolbox-link-background-color: #fff;
-$toolbox-link-color-hover: #000;
-$toolbox-link-background-color-hover: #eee;
+$toolbox-link-color-hover: #fff;
+$toolbox-link-background-color-hover: $teal;
 
 //Supermenu
-$supermenu-button-color: #555;
-$supermenu-button-background-color: #eee;
-$supermenu-button-color-hover: #333;
-$supermenu-button-background-color-hover: #eee;
+$supermenu-button-color: $base-text-color;
+$supermenu-button-background-color: transparent;
+$supermenu-button-color-hover: $base-text-color;
+$supermenu-button-background-color-hover: transparent;
 $supermenu-dropdown-button-color: $base-text-color;
 $supermenu-dropdown-border-color: #000;
-$supermenu-dropdown-button-background-color: #fff;
-$supermenu-dropdown-button-color-hover: #000;
-$supermenu-dropdown-button-background-color-hover: #eee;
+$supermenu-dropdown-button-background-color: #eaefef;
+$supermenu-dropdown-button-color-hover: white;
+$supermenu-dropdown-button-background-color-hover: $teal;
 //mobile only
-$supermenu-link-color: #333 ;
+$supermenu-link-color: $dark-teal;
 //icons
 $supermenu-dropdown-icons-color:#777;
 $supermenu-dropdown-icons-color-hover:#fff;
@@ -142,7 +149,7 @@ $micro-mobile-footer-arrows-color: #d7df58;
 $micro-module-info-button-color: #d7e059;
 $micro-vertical-spacers-lines-border-color: #d7e059;
 $micro-mobile-edges-background-color: #222;
-$micro-mobile-course-title-color: $micro-mobile-footer-arrows-color;
+$micro-mobile-course-title-color: #d7df58;
 
 //Micro-menu
 $micro-menu-toc-marker-background-color: #111;

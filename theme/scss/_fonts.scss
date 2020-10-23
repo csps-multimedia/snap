@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Gotham Bold';
+	src:url('fonts/Gotham/Gotham-Bold.eot');
+	src:url('fonts/Gotham/Gotham-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+		url('fonts/Gotham/Gotham TrueType/Gotham-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+		
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+	src:url('fonts/Gotham/Gotham-Book.eot');
+	src:url('fonts/Gotham/Gotham-Book.woff') format('woff'), /* Pretty Modern Browsers */
+		url('fonts/Gotham/Gotham TrueType/Gotham-Book.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+

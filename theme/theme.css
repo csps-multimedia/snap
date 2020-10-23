@@ -1,89 +1,622 @@
 /*@import "./_various";*/
 /*@import "./_prefixers";*/
+/* line 156, ../common/scss/utils/mixins/helpers/_animations.scss */
 .LOM-feedback-transition {
   /*-webkit-transition: background-color 1s linear;
-   -moz-transition: background-color 1s linear;
-   -o-transition: background-color 1s linear;
-   transition: background-color 1s linear;*/
+  -moz-transition: background-color 1s linear;
+  -o-transition: background-color 1s linear;
+  transition: background-color 1s linear;*/
   /*background: white;*/
-  -webkit-animation: color-me-in 0.75s;
-          animation: color-me-in 0.75s;
-}
-
-@-webkit-keyframes color-me-in {
-  0% {
-    background: #c8f9af;
-  }
-  100% {
-    background: white;
-  }
-}
+  animation: color-me-in 0.75s; }
 
 @keyframes color-me-in {
   0% {
-    background: #c8f9af;
-  }
+    background: #c8f9af; }
   100% {
-    background: white;
-  }
-}
-
+    background: white; } }
 /*@import "./_animations";*/
 /*@import "./helpers/_helpers";*/
+/* line 1, ../common/scss/utils/_shorthands.scss */
 .alignLeft {
-  text-align: left;
-}
+  text-align: left; }
 
+/* line 4, ../common/scss/utils/_shorthands.scss */
 .alignRight {
-  text-align: right;
-}
+  text-align: right; }
 
+/* line 7, ../common/scss/utils/_shorthands.scss */
 .alignCenter {
-  text-align: center;
-}
+  text-align: center; }
 
+/* line 11, ../common/scss/utils/_shorthands.scss */
 .verticalCenter {
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
+/* line 22, ../common/scss/utils/_shorthands.scss */
 .w10 {
-  width: 10%;
-}
+  width: 10%; }
 
+/* line 22, ../common/scss/utils/_shorthands.scss */
 .w20 {
-  width: 20%;
-}
+  width: 20%; }
 
+/* line 22, ../common/scss/utils/_shorthands.scss */
 .w30 {
-  width: 30%;
-}
+  width: 30%; }
 
+/* line 22, ../common/scss/utils/_shorthands.scss */
 .w40 {
-  width: 40%;
-}
+  width: 40%; }
 
+/* line 22, ../common/scss/utils/_shorthands.scss */
 .w50 {
-  width: 50%;
-}
+  width: 50%; }
 
+/* line 22, ../common/scss/utils/_shorthands.scss */
 .w60 {
-  width: 60%;
-}
+  width: 60%; }
 
+/* line 22, ../common/scss/utils/_shorthands.scss */
 .w70 {
-  width: 70%;
-}
+  width: 70%; }
 
+/* line 22, ../common/scss/utils/_shorthands.scss */
 .w80 {
-  width: 80%;
-}
+  width: 80%; }
 
+/* line 22, ../common/scss/utils/_shorthands.scss */
 .w90 {
-  width: 90%;
-}
+  width: 90%; }
 
+/* line 22, ../common/scss/utils/_shorthands.scss */
 .w100 {
-  width: 100%;
-}
+  width: 100%; }
+
+/*@import "./_various";*/
+/*@import "./_prefixers";*/
+/* line 156, ../common/scss/utils/mixins/helpers/_animations.scss */
+.LOM-feedback-transition {
+  /*-webkit-transition: background-color 1s linear;
+  -moz-transition: background-color 1s linear;
+  -o-transition: background-color 1s linear;
+  transition: background-color 1s linear;*/
+  /*background: white;*/
+  animation: color-me-in 0.75s; }
+
+@keyframes color-me-in {
+  0% {
+    background: #c8f9af; }
+  100% {
+    background: white; } }
+/*@import "./_animations";*/
+/*@import "./helpers/_helpers";*/
+/* line 1, ../common/scss/utils/_shorthands.scss */
+.alignLeft {
+  text-align: left; }
+
+/* line 4, ../common/scss/utils/_shorthands.scss */
+.alignRight {
+  text-align: right; }
+
+/* line 7, ../common/scss/utils/_shorthands.scss */
+.alignCenter {
+  text-align: center; }
+
+/* line 11, ../common/scss/utils/_shorthands.scss */
+.verticalCenter {
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w10 {
+  width: 10%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w20 {
+  width: 20%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w30 {
+  width: 30%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w40 {
+  width: 40%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w50 {
+  width: 50%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w60 {
+  width: 60%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w70 {
+  width: 70%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w80 {
+  width: 80%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w90 {
+  width: 90%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w100 {
+  width: 100%; }
+
+/* *****************************************
+ *     HEADER
+ * *****************************************/
+/* line 10, scss/_banner_footer.scss */
+#wb-bnr {
+  background: #265d60 url(a230/banner.jpg) center bottom no-repeat; }
+  /* line 12, scss/_banner_footer.scss */
+  #wb-bnr > div.container {
+    min-height: 138px; }
+
+/* line 16, scss/_banner_footer.scss */
+#wb-sttl {
+  background: url(a230/logo.png) no-repeat;
+  display: block;
+  height: 95px; }
+  /* line 20, scss/_banner_footer.scss */
+  #wb-sttl a {
+    margin-left: 110px;
+    width: 55%;
+    display: block;
+    font-family: "Gotham Bold", sans-serif, "Myriad Pro";
+    color: #265d60;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: normal;
+    text-decoration: none;
+    position: relative;
+    top: 40px !important; }
+
+/* *****************************************
+ *     FOOTER
+ * *****************************************/
+/* line 40, scss/_banner_footer.scss */
+footer {
+  background-color: #265d60; }
+  /* line 42, scss/_banner_footer.scss */
+  footer .backnext {
+    background-color: white; }
+
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url("fonts/Gotham/Gotham-Bold.eot");
+  src: url("fonts/Gotham/Gotham-Bold.woff") format("woff"), url("fonts/Gotham/Gotham TrueType/Gotham-Bold.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+@font-face {
+  font-family: 'Gotham Book';
+  src: url("fonts/Gotham/Gotham-Book.eot");
+  src: url("fonts/Gotham/Gotham-Book.woff") format("woff"), url("fonts/Gotham/Gotham TrueType/Gotham-Book.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+/* line 16, scss/_fonts.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* line 8, scss/_content.scss */
+table.table-bordered thead th, table.table-bordered thead td, table.table-bordered tbody th, table.table-bordered tbody td, table.table-bordered tfoot th, table.table-bordered tfoot td {
+  border: 1px solid #ccc; }
+/* line 13, scss/_content.scss */
+table th {
+  padding: 10px;
+  color: white;
+  background: #265d60; }
+
+/* line 25, scss/_content.scss */
+.LOM-element details {
+  border: thin solid #666;
+  background: #eaefef;
+  /* main-tabbed-myinfo-colour */ }
+  /* line 28, scss/_content.scss */
+  .LOM-element details p {
+    margin-top: 20px; }
+  /* line 29, scss/_content.scss */
+  .LOM-element details summary {
+    font-weight: bold;
+    border: none;
+    text-decoration: none !important;
+    background: #265d60;
+    /* main-tabbed-bar-colour */
+    border-radius: 0;
+    color: white;
+    /*main-tabbed-text-colour */ }
+  /* line 38, scss/_content.scss */
+  .LOM-element details[open] {
+    padding-bottom: 0; }
+    /* line 40, scss/_content.scss */
+    .LOM-element details[open] .wb-toggle {
+      background: #1c3e40; }
+
+/* line 51, scss/_content.scss */
+.wb-tabs {
+  margin-bottom: 15px; }
+  /* line 53, scss/_content.scss */
+  .wb-tabs .tabpanels {
+    background: #eaefef; }
+  /* line 56, scss/_content.scss */
+  .wb-tabs details {
+    border-radius: 0 4px 4px 4px; }
+  /* line 62, scss/_content.scss */
+  .wb-tabs [role="tablist"] li a {
+    background-color: #265d60;
+    color: #FFFFFF; }
+    /* line 65, scss/_content.scss */
+    .wb-tabs [role="tablist"] li a:hover, .wb-tabs [role="tablist"] li a:focus {
+      text-decoration: underline; }
+    /* line 66, scss/_content.scss */
+    .wb-tabs [role="tablist"] li a img {
+      width: 15em; }
+  /* line 68, scss/_content.scss */
+  .wb-tabs [role="tablist"] li.active a {
+    border-top: none;
+    /* main-tabbed-border */
+    padding-top: 10px;
+    background: #1c3e40;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease; }
+    /* line 78, scss/_content.scss */
+    .wb-tabs [role="tablist"] li.active a:hover, .wb-tabs [role="tablist"] li.active a:focus {
+      border-top: none; }
+
+/* line 90, scss/_content.scss */
+.glyphicon.glyphicon-ok {
+  color: #77ac3d; }
+
+/* line 91, scss/_content.scss */
+.glyphicon.glyphicon-remove {
+  color: #a32828; }
+
+/* line 93, scss/_content.scss */
+.lt-ie9 input[type="radio"] + label {
+  width: 90%;
+  padding: 0 0 0 1em !important;
+  font-weight: 100 !important; }
+
+/* line 94, scss/_content.scss */
+.lt-ie9 .qs-text {
+  font-size: 14px !important; }
+
+/* line 97, scss/_content.scss */
+.qs-disabled {
+  display: none; }
+
+/* line 98, scss/_content.scss */
+.qs-num {
+  font-size: 18px; }
+
+/* line 99, scss/_content.scss */
+.qs-step1 .qs-nextquestion, .qs-step1 .qs-prevquestion, .qs-step3 .qs-nextquestion, .qs-step3 .qs-prevquestion {
+  display: none; }
+
+/* line 102, scss/_content.scss */
+.qs-step1 .qs-current-info, .qs-step3 .qs-current-info {
+  display: none; }
+
+/* line 104, scss/_content.scss */
+.qs-nextquestion, .qs-submit-activity {
+  background-color: #0f0; }
+
+/*questions/answers styles*/
+/* line 109, scss/_content.scss */
+.table-9-4-0 td {
+  border: 1px solid grey;
+  padding: 10px;
+  vertical-align: top; }
+
+/* Quiz Button Styles */
+/* line 8, scss/_quiz.scss */
+.btn-default {
+  background: #265d60;
+  color: white;
+  border-color: #666; }
+  /* line 12, scss/_quiz.scss */
+  .btn-default:hover, .btn-default:focus, .btn-default.active {
+    background: #1c3e40; }
+
+/* line 16, scss/_quiz.scss */
+.qs-submit {
+  background-color: red; }
+
+/* -----------------------------------------------------
+
+                  Quiz Styles
+				  
+-------------------------------------------------------*/
+/* line 28, scss/_quiz.scss */
+.qs-elearning-activity {
+  display: block;
+  border: thin solid #ccc;
+  padding: 15px;
+  background-color: #FFF; }
+  /* line 35, scss/_quiz.scss */
+  .qs-elearning-activity .qs-exercise {
+    /*display: block;
+    border: thin solid #ccc;
+    padding: 15px;
+    background-color:#FFF;*/ }
+  /* line 42, scss/_quiz.scss */
+  .qs-elearning-activity .qs-text legend {
+    font-size: 16px !important;
+    font-weight: bold;
+    font-size: 16px !important;
+    font-weight: bold !important; }
+  /* line 60, scss/_quiz.scss */
+  .qs-elearning-activity .qs-answers {
+    margin-left: 35px; }
+    /* line 62, scss/_quiz.scss */
+    .qs-elearning-activity .qs-answers th {
+      font-size: 1.1em; }
+    /* line 63, scss/_quiz.scss */
+    .qs-elearning-activity .qs-answers td {
+      font-size: 0.9em; }
+    /* line 64, scss/_quiz.scss */
+    .qs-elearning-activity .qs-answers label {
+      display: block;
+      position: relative;
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+      padding-left: 6px !important;
+      font-size: 14px !important;
+      font-weight: 100;
+      clear: both; }
+      /* line 73, scss/_quiz.scss */
+      .qs-elearning-activity .qs-answers label .LOM-editable {
+        display: inline-block;
+        margin-left: 15px; }
+    /* line 78, scss/_quiz.scss */
+    .qs-elearning-activity .qs-answers input {
+      width: inherit;
+      position: absolute; }
+    /* line 80, scss/_quiz.scss */
+    .qs-elearning-activity .qs-answers input[type="radio"] + label {
+      width: 90%;
+      padding: 1em; }
+  /* line 86, scss/_quiz.scss */
+  .qs-elearning-activity .qs-feedback {
+    margin-top: 20px; }
+    /* line 88, scss/_quiz.scss */
+    .qs-elearning-activity .qs-feedback .qs-generic {
+      margin-left: 20px; }
+    /* line 89, scss/_quiz.scss */
+    .qs-elearning-activity .qs-feedback span.glyphicon.glyphicon-remove + p {
+      line-height: 34px !important; }
+    /* line 92, scss/_quiz.scss */
+    .qs-elearning-activity .qs-feedback .glyphicon.glyphicon-remove {
+      float: left;
+      margin-right: 15px; }
+    /* line 96, scss/_quiz.scss */
+    .qs-elearning-activity .qs-feedback .qs-right, .qs-elearning-activity .qs-feedback .qs-wrong {
+      padding: 20px 20px 0px 20px;
+      margin: 0px 20px 20px 20px; }
+    /* line 101, scss/_quiz.scss */
+    .qs-elearning-activity .qs-feedback .qs-right {
+      border: thin solid #77ac3d; }
+    /* line 102, scss/_quiz.scss */
+    .qs-elearning-activity .qs-feedback .qs-wrong {
+      border: thin solid #a32828; }
+  /* line 105, scss/_quiz.scss */
+  .qs-elearning-activity .qs-feedback-final p {
+    font-size: 1.2em; }
+  /* line 107, scss/_quiz.scss */
+  .qs-elearning-activity .pagination a {
+    min-width: 90px;
+    text-align: center; }
+  /* line 111, scss/_quiz.scss */
+  .qs-elearning-activity .pagination li {
+    display: inline-block;
+    margin-right: 20px; }
+  /* line 117, scss/_quiz.scss */
+  .qs-elearning-activity .qs-current-info {
+    background-color: #265d60;
+    /*main-quiz-header */
+    padding: 5px 15px 5px 30px;
+    color: white;
+    font-size: 1.2em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+
+/* line 127, scss/_quiz.scss */
+.LOM-element.ribbon-top.activity {
+  padding-left: 0px;
+  margin-top: 30px; }
+
+/* line 132, scss/_quiz.scss */
+.LOM-element.ribbon-top.activity:before {
+  margin-left: 0px; }
+
+/* line 137, scss/_quiz.scss */
+html .qs-elearning-activity h2 {
+  margin-top: -5px;
+  margin-left: 60px;
+  margin-bottom: 20px; }
+
+/*@import "./_various";*/
+/*@import "./_prefixers";*/
+/* line 156, ../common/scss/utils/mixins/helpers/_animations.scss */
+.LOM-feedback-transition {
+  /*-webkit-transition: background-color 1s linear;
+  -moz-transition: background-color 1s linear;
+  -o-transition: background-color 1s linear;
+  transition: background-color 1s linear;*/
+  /*background: white;*/
+  animation: color-me-in 0.75s; }
+
+@keyframes color-me-in {
+  0% {
+    background: #c8f9af; }
+  100% {
+    background: white; } }
+/*@import "./_animations";*/
+/*@import "./helpers/_helpers";*/
+/* line 1, ../common/scss/utils/_shorthands.scss */
+.alignLeft {
+  text-align: left; }
+
+/* line 4, ../common/scss/utils/_shorthands.scss */
+.alignRight {
+  text-align: right; }
+
+/* line 7, ../common/scss/utils/_shorthands.scss */
+.alignCenter {
+  text-align: center; }
+
+/* line 11, ../common/scss/utils/_shorthands.scss */
+.verticalCenter {
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w10 {
+  width: 10%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w20 {
+  width: 20%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w30 {
+  width: 30%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w40 {
+  width: 40%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w50 {
+  width: 50%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w60 {
+  width: 60%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w70 {
+  width: 70%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w80 {
+  width: 80%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w90 {
+  width: 90%; }
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w100 {
+  width: 100%; }
+
+/* -------------- SUPERMENU ----------------*/
+/* line 9, scss/_supermenu.scss */
+html body header #wb-sm {
+  height: 42px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222; }
+  /* line 14, scss/_supermenu.scss */
+  html body header #wb-sm .supermenu > li > a {
+    font-family: "Gotham Book", sans-serif, "Myriad Pro"; }
+    /* line 16, scss/_supermenu.scss */
+    html body header #wb-sm .supermenu > li > a[data-id='lvl1'] {
+      border-left: #222 1px solid; }
+    /* line 19, scss/_supermenu.scss */
+    html body header #wb-sm .supermenu > li > a:hover, html body header #wb-sm .supermenu > li > a:focus {
+      border-bottom: #265d60 2px solid; }
+  /* line 25, scss/_supermenu.scss */
+  html body header #wb-sm .supermenu > li ul > li > a {
+    font-family: "Gotham Book", sans-serif, "Myriad Pro";
+    padding: 3px 35px 3px 15px; }
+    /* line 28, scss/_supermenu.scss */
+    html body header #wb-sm .supermenu > li ul > li > a[href='#']:after {
+      color: grey; }
+
+/* REMOVE THIS PART IN 1.6.3 */
+/*items that have subitems*/
+/* line 43, scss/_supermenu.scss */
+#wb-sm .sm.open li {
+  /*menu open panel, individual items */ }
+  /* line 45, scss/_supermenu.scss */
+  #wb-sm .sm.open li a, #wb-sm .sm.open li summary {
+    /*mobile*/
+    padding: 3px 30px 3px 10px; }
+    /* line 48, scss/_supermenu.scss */
+    #wb-sm .sm.open li a:before, #wb-sm .sm.open li summary:before {
+      color: #265d60;
+      font-family: 'Glyphicons Halflings';
+      content: ' ';
+      font-size: 0.8em;
+      display: inline-block;
+      width: 20px; }
+    /* line 57, scss/_supermenu.scss */
+    #wb-sm .sm.open li a.viewed:before, #wb-sm .sm.open li summary.viewed:before {
+      content: '\e013'; }
+  /* line 62, scss/_supermenu.scss */
+  #wb-sm .sm.open li a[href='#']:after {
+    /* little arrow right> */
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e080";
+    font-size: 1em;
+    right: 5px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #265d60; }
+
+/* line 12, scss/theme.scss */
+.wb-tabs.carousel-s2.wb-tabs-inited {
+  padding-bottom: 4.375em; }
+  /* line 15, scss/theme.scss */
+  .wb-tabs.carousel-s2.wb-tabs-inited .control.nxt, .wb-tabs.carousel-s2.wb-tabs-inited .control.prv, .wb-tabs.carousel-s2.wb-tabs-inited .control.tab-count {
+    display: table-cell !important;
+    vertical-align: middle; }
+
+/* line 22, scss/theme.scss */
+body {
+  background-color: transparent; }
+
+/* line 31, scss/theme.scss */
+.wb-mltmd .wb-mm-ctrls {
+  background: #1c3e40; }
+/* line 34, scss/theme.scss */
+.wb-mltmd .wb-mm-ctrls progress {
+  border-color: #1c3e40; }
+/* line 37, scss/theme.scss */
+.wb-mltmd.video.waiting .display:before, .wb-mltmd.video:not(.playing):not(.waiting) .display:before {
+  background-color: #1c3e40; }
+
+/* line 44, scss/theme.scss */
+.external-list dl {
+  padding-left: 40px; }
+/* line 45, scss/theme.scss */
+.external-list dd {
+  display: none; }
+
+/* line 48, scss/theme.scss */
+.link-as-button {
+  background-color: #265d60;
+  color: white;
+  display: inline-block;
+  padding: 5px 53px;
+  border: 0px solid #265d60;
+  border-radius: 5px;
+  text-decoration: none; }
+  /* line 56, scss/theme.scss */
+  .link-as-button:hover {
+    background-color: #1c3e40;
+    color: white; }
+
 /*# sourceMappingURL=theme.css.map */

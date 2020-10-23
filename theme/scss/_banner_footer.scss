@@ -1,0 +1,45 @@
+
+@import "../scss/_vars";
+@import "../../common/scss/utils/_utils";
+
+/* *****************************************
+ *     HEADER
+ * *****************************************/
+
+
+#wb-bnr{
+	background: #265d60 url(a230/banner.jpg) center bottom no-repeat;
+	&>div.container{    min-height: 138px;}
+
+}
+
+#wb-sttl{
+	background: url(a230/logo.png) no-repeat;
+	display: block;
+    height: 95px;
+	a{    
+		margin-left: 110px;
+    width: 55%;
+    display: block;
+    font-family: "Gotham Bold", sans-serif, "Myriad Pro";
+    color: #265d60;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: normal;
+    text-decoration: none;
+    position: relative;
+    top: 40px !important;
+	}
+
+}
+
+/* *****************************************
+ *     FOOTER
+ * *****************************************/
+
+footer{
+	background-color:$teal;
+	.backnext{
+		background-color:white;
+	}
+}

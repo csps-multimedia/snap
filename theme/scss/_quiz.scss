@@ -1,0 +1,141 @@
+@import "./_vars";
+
+//------------------quiz
+
+
+/* Quiz Button Styles */
+
+.btn-default{
+	background:$teal;
+	color: white;
+	border-color:$semi-grey;
+	&:hover, &:focus, &.active{background:$dark-teal;}
+}
+
+
+.qs-submit{
+	background-color:red;
+}
+
+/* -----------------------------------------------------
+
+                  Quiz Styles
+				  
+-------------------------------------------------------*/		
+
+
+
+.qs-elearning-activity {
+	//margin-top:15px; 
+	//margin-left: -1em;
+		display: block;
+		border: thin solid #ccc;
+		padding: 15px;
+		background-color:#FFF;
+	.qs-exercise{
+		/*display: block;
+		border: thin solid #ccc;
+		padding: 15px;
+		background-color:#FFF;*/
+	}	
+	.qs-text{
+		legend{
+			font-size: 16px !important;
+			font-weight:bold;
+			font-size:16px !important; 
+			font-weight:bold !important;
+			
+		}
+	}
+	
+	
+
+
+
+
+	
+	
+	
+	// ANSWERS
+	.qs-answers {
+		margin-left:35px;
+		th{font-size:1.1em;}
+		td{font-size:0.9em;}
+		label{
+			display:block; 
+			position:relative;
+			padding-top: 0px !important; 
+			padding-bottom: 0px !important; 
+			padding-left: 6px !important; 
+			font-size:14px !important;
+			font-weight:100;
+			clear:both;
+			.LOM-editable{
+				display:inline-block;
+				margin-left:15px;
+			}
+		}	
+		input{width:inherit; position:absolute;}
+		//input[type="radio"]{float:left;}
+		input[type="radio"] + label{ width:90%; padding:1em;}		
+	}
+
+	
+	
+	  // FEEDBACK
+	.qs-feedback{	
+		margin-top: 20px;
+		.qs-generic {margin-left:20px;}
+		span.glyphicon.glyphicon-remove + p{
+			line-height:34px !important;
+		}
+		 .glyphicon.glyphicon-remove{
+			float:left;
+			margin-right:15px
+		}
+		.qs-right, .qs-wrong{
+			padding:20px 20px 0px 20px;
+			margin: 0px 20px 20px 20px;
+		}	
+
+		.qs-right{ border:thin solid #77ac3d;}
+		.qs-wrong{ border:thin solid #a32828;}		
+	}
+
+	.qs-feedback-final p{font-size:1.2em;}
+	.pagination{
+		 a{
+			min-width:90px;
+			text-align:center;
+		}
+		li{
+			display:inline-block; 
+			margin-right:20px;
+		}
+
+	}
+	.qs-current-info{
+		background-color:$teal; /*main-quiz-header */
+		padding:5px 15px 5px 30px;
+		color:white;
+		font-size:1.2em;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;	
+	}	
+}
+
+.LOM-element.ribbon-top.activity{
+	padding-left:0px;
+	margin-top:30px;
+}
+
+.LOM-element.ribbon-top.activity:before{
+	margin-left:0px;
+}
+
+
+html .qs-elearning-activity h2 {
+    margin-top: -5px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}

@@ -1,8 +1,8 @@
 //DO NOT MODIFY ↓
 define([
-	'jquery'
-], function ($) {
-	//DO NOT MODIFY ↑
+    'jquery'
+], function($) {
+//DO NOT MODIFY ↑
 
 	function initialize() {
 		setEvents();
@@ -10,10 +10,10 @@ define([
 
 	function setEvents() {
 		$(masterStructure)
-			.on("Framework:systemReady", function () {
+			.on("Framework:systemReady", function() {
 				systemReady();
 			})
-			.on("Framework:pageLoaded", function () {
+			.on("Framework:pageLoaded", function() {
 				pageLoaded();
 			});
 	}
@@ -25,10 +25,27 @@ define([
 
 	/* is called on every page load, great for adding custom code to all pages*/
 	function pageLoaded() {
-		//console.log("Interactions:pageLoaded");
+		toggleType();
+	}
+	
+	function toggleType(){
+		var $toggle=$("[data-LOM-toggle-type='next']");
+		var $togglables=$toggle.next();
+		$toggle.click(function(){
+			var $thisOne=$(this).next();
+			var isVisible=$thisOne.is(":visible"); 
+			$togglables.hide();
+			if(isVisible){
+			   $thisOne.hide();
+			}else{
+				   
+			   $thisOne.show();
+			   }
+		});
 
 	}
 
-	initialize();
 
+
+	initialize();
 });
