@@ -2353,13 +2353,19 @@ function qsBeta(objAcc, paramObj) {
 			}
 		}
 
+		//send the score to LMS
+		var score = parseInt(this.qsComputeActivityScore(ancestryIDARR[0], 'perc'), 10);
+		//console.log(score);
+		scorm.saveScoreData(score);
+
+
 		//COURSE COMPLETION
 		// trigger_course_completion
 		// trigger_completion_score
 		if (this.activities[ancestryIDARR[0]].trigger_course_completion) {
 			//CHECK IF GOT PASSING GRADE
-			fCe('COURSE COMPLETION VALIDATION:' + this.qsComputeActivityScore(ancestryIDARR[0], 'perc') + "% (" + this.activities[ancestryIDARR[0]].trigger_completion_score + "% OR MORE NEEDED TO GRADUATE)\nCOURSE COMPLETION TRIGGER IS CURRENTLY INCOMPLETE AND WILL NOT SAVE ANYTHING TO THE LMS");
-			if (this.qsComputeActivityScore(ancestryIDARR[0], 'perc') >= this.activities[ancestryIDARR[0]].trigger_completion_score) {
+			fCe('COURSE COMPLETION VALIDATION:' + score + "% (" + this.activities[ancestryIDARR[0]].trigger_completion_score + "% OR MORE NEEDED TO GRADUATE)\nCOURSE COMPLETION TRIGGER IS CURRENTLY INCOMPLETE AND WILL NOT SAVE ANYTHING TO THE LMS");
+			if (score >= this.activities[ancestryIDARR[0]].trigger_completion_score) {
 				fCl('TRIGGER COURSE COMPLETION!');
 				try {
 					scorm.complete();

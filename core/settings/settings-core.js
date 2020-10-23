@@ -63,7 +63,8 @@ define({
 	/*------------------ Scorm settings ---------------*/
 	trackAllPages: true,
 	triggerCompletionWhenAllPagesViewed: false,
-	markModuleAsViewedOnLastPage: false, //broken	
+	markModuleAsViewedOnLastPage: false, //broken
+	scormSendScore: false, //this will be checked by QS to send scores or not.
 
 	/*------------------ DATA / Google Analytics -----------------*/
 

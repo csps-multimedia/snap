@@ -12,7 +12,6 @@ define(['jquery',
 
 	CoreSettings.connectionMode = (CoreSettings.connectionMode === null) ? detectConnMode(api) : CoreSettings.connectionMode;
 
-
 	CoreSettings.scormversion = api;
 
 
@@ -48,7 +47,13 @@ define(['jquery',
 
 	function detectConnMode(api) {
 
-		//CoreSettings.connectionMode=(CoreSettings.connectionMode===null)?null:CoreSettings.connectionMode;
+		//this is the localhost scorm player.
+		if (window.frameElement !== null) {
+			if (window.frameElement.name === "wndSTAGEFRAME") {
+				return "scorm";
+			}
+		}
+
 		if (CoreSettings.environment !== "prod" || api === null) {
 			return "offline";
 		} else {

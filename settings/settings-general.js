@@ -7,5 +7,6 @@ define({
   "seriesTitle_en": "Series Title",
   "seriesTitle_fr": "Titre de série",
   "addToolboxPage": [],
-  "editMode": true
+  "editMode": true,
+  "scormSendScore": true
 });

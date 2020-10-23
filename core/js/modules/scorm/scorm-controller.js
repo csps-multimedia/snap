@@ -90,12 +90,11 @@ define([
 		},
 
 
-		/*CSPS-TD-AJOUT G313*/
 		saveScoreData: function (data) {
-			if (this.getStatus() === "online") {
-				this.api.doLMSSetValue(CONSTANTS.CMI.CORE.SCORE_MIN, 0);
-				this.api.doLMSSetValue(CONSTANTS.CMI.CORE.SCORE_MAX, 100);
-				this.api.doLMSSetValue(CONSTANTS.CMI.CORE.SCORE_RAW, data);
+			if (this.getStatus() === "online" && CoreSettings.scormSendScore) {
+				this.api.doLMSSetValue(CONSTANTS.CMI.CORE.SCORE_MIN, "0");
+				this.api.doLMSSetValue(CONSTANTS.CMI.CORE.SCORE_MAX, "100");
+				this.api.doLMSSetValue(CONSTANTS.CMI.CORE.SCORE_RAW, data.toString());
 				this.api.doLMSCommit();
 			} else {
 				this.checkStatusChange();
